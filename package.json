@@ -1,0 +1,25 @@
+{
+  "name": "greenpeace-ocean",
+  "version": "1.0.0",
+  "description": "Prototype GreenPeace Ocean",
+  "main": "server.js",
+  "scripts": {
+    "test": "jasmine",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.5",
+    "mongoose-unique-validator": "^2.0.3",
+    "nodemon": "^1.19.1",
+    "path": "^0.12.7",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "jasmine": "^3.1.0",
+    "request": "^2.87.0"
+  }
+}

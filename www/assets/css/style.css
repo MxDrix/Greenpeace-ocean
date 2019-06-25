@@ -1,0 +1,51 @@
+body{
+ position:relative;       
+ overflow: hidden;
+ background: #4f1fad;
+}
+.fish{
+background-image: url(https://1.bp.blogspot.com/-ihoVSTQre20/V1FZc1OGXEI/AAAAAAAAa6Q/bwaNuZy0ctkixPDYvbR3LjaWXe5s7a-5gCK4B/s1600/ikan-mys2010.gif);
+background-repeat: no-repeat;
+background-size: contain;
+height: 30px;
+width: auto;
+}
+.main_container {
+ height: 100vh;
+overflow:hidden;
+width: 100%;
+max-width: 100%;
+padding: 0;
+position:relative;
+}
+.container {
+ height: 100vh;
+ width: 100%; 
+ max-width: 100%; 
+ padding: 0; 
+ position: absolute; 
+ max-height: 100%;
+ margin: 0;
+ top: 0;
+}
+#messages {
+
+height: 100%;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+width: 100%;
+
+}
+.jumbotron {
+z-index: 99999;
+position: absolute;
+right: 2vw;
+padding-top: 20px;
+padding-bottom: 20px;
+margin: 0;
+top: 50%;
+transform: translateY(-50%);
+}
