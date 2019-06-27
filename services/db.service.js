@@ -11,7 +11,7 @@ Config
         return new Promise( (resolve, reject) => {
             mongoose.connect("mongodb://localhost:27017/Greenpeace", { useNewUrlParser: true })
             .then( db => resolve( { db: db, url: process.env.MONGO_URL } ))
-            .catch( error => reject(`MongoDB not connected`, error) )
+            .catch( error => reject(`MongoDB not connecte`, error) )
         })
     }
 //
