@@ -13,6 +13,12 @@ app.use(express.static(__dirname));
 app.use( express.static(path.join(__dirname, 'www')) );
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}))
+app.all('/', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Authorization, X-Requested-With, Content-Type, Accept");
+    res.header("Access-Control-Allow-Methods", "GET, POST, PUT, OPTIONS, DELETE");
+    next();
+});
 
 
 
@@ -52,12 +58,7 @@ app.post('/register', async (req, res) => {
   catch (error){
     res.sendStatus(500);
     io.emit('message', "error_one");
-    // return console.log('error',error);
   }
-  // finally{
-  //   console.log('Message Posted')
-  // }
-
 })
 
 
